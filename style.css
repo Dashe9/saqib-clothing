@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #7313b4;
+    color: #333;
+}
+.navbar {
+    background-color: #8a23cf;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: rgb(237, 232, 232);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #9b0f0f;
+    border-radius: 5px;
+}
+header {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGlz0IUaO5oHSbPsweLAOPCXXzYMtkAIi7lQ&s');
+    background-size: cover;
+    background-position: center;
+    padding: 150px 20px;
+    text-align: center;
+    color: rgb(223, 225, 237);
+}
+
+.hero-banner h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-banner p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.button-primary {
+    background-color: #0a0a9c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button-primary:hover {
+    background-color: #cf4c13;
+}
+
+.button-secondary {
+    background-color: #0a19a0;
+    color: white;
+    padding: 3px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button-secondary:hover {
+    background-color: #ff7043;
+}
+
+.button-sale {
+    background-color: #130863;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button-sale:hover {
+    background-color: #dc150e;
+}
+
+.button-offer {
+    background-color: #0a108a;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.button-offer:hover {
+    background-color: #ea5708;
+}
+.featured-products {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.sale {
+    background-color: #10100e;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.offers {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.new-products {
+    background-color: #e3f2fd;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.media {
+    background-color: #fce4ec;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact {
+    background-color: #f1f8e9;
+    padding: 50px 20px;
+    text-align: center;
+}
+.product-list, .media-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-item, .media-gallery img {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.product-item:hover, .media-gallery img:hover {
+    transform: translateY(-10px);
+}
+
+.product-item img, .media-gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-content a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-list, .media-gallery {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 100px 20px;
+    }
+
+    .hero-banner h1 {
+        font-size: 2em;
+    }
+}
